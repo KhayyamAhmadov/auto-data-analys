@@ -1,0 +1,11 @@
+pandas
+numpy
+scipy
+matplotlib
+seaborn         
+openpyxl        
+openpyxl
+xlsxwriter 
+Jinja2
+reportlab
+pyinstaller
