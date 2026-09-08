@@ -9,3 +9,4 @@ xlsxwriter
 Jinja2
 reportlab
 pyinstaller
+playsound3

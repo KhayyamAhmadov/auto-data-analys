@@ -33,6 +33,7 @@ Thumbs.db
 # Generated files
 reports/
 output/
+charts/
 
 # Temporary files
 *.tmp

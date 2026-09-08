@@ -35,8 +35,7 @@ class DataFindings:
         if not corr.empty:
             columns = corr.columns
             st_pair = None
-            st_value = None
-
+            st_value = -1
 
             for i in range(len(columns)):
                 for j in range(i + 1, len(columns)):
@@ -46,12 +45,11 @@ class DataFindings:
                         st_pair = (columns[i], columns[j], corr.iloc[i, j])
 
             if st_pair:
-                    findings.append(
-                        f"Ən güclü xətti əlaqə "
-                        f"{st_pair[0]} və "
-                        f"{st_pair[1]} "
-                        f"arasında müşahidə edilmişdir "
-                        f"(r = {st_pair[2]:.2f}).")
+                findings.append(
+                    f"Ən güclü xətti əlaqə "
+                    f"{st_pair[0]} və "
+                    f"{st_pair[1]} "
+                    f"arasında müşahidə edilmişdir "
+                    f"(r = {st_pair[2]:.2f}).")
 
-            return findings
-
+        return findings

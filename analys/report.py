@@ -148,7 +148,7 @@ class ReportGenerator:
         content.append(Spacer(1, 20))
         content.append(Paragraph("4. Exploratory Data Analysis", styles["Heading2"]))
 
-        statistics = eda["numeric_statistics"]
+        statistics = eda["numeric_statistic"]
 
         if not statistics.empty:
             table_data = [["Column"] + [safe_text(i) for i in statistics.index]]
