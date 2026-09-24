@@ -1,8 +1,3 @@
-"""
-Sadə skript: user öz DB məlumatlarını daxil edir, DatabaseManager
-vasitəsilə qoşulur, cədvəlləri göstərir və istəyə görə data yükləyir.
-"""
-
 from load_database import DatabaseManager
 
 

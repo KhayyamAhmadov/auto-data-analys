@@ -51,7 +51,7 @@ stats_row([
 
 
 spacer("medium")
-tab_preview, tab_columns = st.tabs([":blue[:material/table_view:] Preview", ":violet[:material/view_column:] Sütunlar"])
+tab_preview = st.tabs([":blue[:material/table_view:] Preview"])
 
 with tab_preview:
     max_rows = min(100, max(summary["rows"], 1))

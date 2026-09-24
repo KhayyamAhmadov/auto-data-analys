@@ -1,21 +1,3 @@
-# import pandas as pd
-
-# def load_file(file_path):
-
-#     if file_path.endswith(".csv"):
-#         return pd.read_csv(file_path)
-
-#     elif file_path.endswith((".xlsx", ".xls")):
-#         return pd.read_excel(file_path)
-
-#     elif file_path.endswith(".json"):
-#         return pd.read_json(file_path)
-
-#     else:
-#         raise ValueError("Dəstəklənməyən fayl formatı")
-
-
-
 import pandas as pd
 from pathlib import Path
 
@@ -32,8 +14,11 @@ def load_file(file_path):
     if extension == ".csv":
         return pd.read_csv(file_path)
 
-    elif extension in [".xlsx", ".xls"]:
-        return pd.read_excel(file_path)
+    elif extension == ".xlsx":
+        return pd.read_excel(file_path, engine="openpyxl")
+
+    elif extension == ".xls":
+        return pd.read_excel(file_path, engine="xlrd")
 
     elif extension == ".json":
         return pd.read_json(file_path)

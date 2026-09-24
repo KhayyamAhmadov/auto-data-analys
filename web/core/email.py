@@ -1,11 +1,11 @@
 import smtplib
 from email.message import EmailMessage
 from pathlib import Path
-
+import streamlit as st
 
 def send_analysis_email(receiver_email, pdf_path, dataset_name):
-    sender_email = "səninmail@gmail.com"
-    sender_password = "GMAIL_APP_PASSWORD"
+    sender_email = st.secrets["mail_address"]
+    sender_password = st.secrets["mail_password"]
 
     pdf_path = Path(pdf_path)
 

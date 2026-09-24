@@ -8,7 +8,8 @@ pyinstaller
 sqlalchemy
 pyodbc
 duckdb
-
+openpyxl
+xlrd
 
 streamlit>=1.50
 pandas
